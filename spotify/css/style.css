@@ -1,0 +1,90 @@
+html{
+    color: white;
+    line-height: 160%;
+}
+.container{
+    display: flex;
+}
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.overflow{
+    overflow: scroll;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.up .side-left{
+    background-color: black;
+    gap: 10px;
+    align-items: center;
+}
+.up .side-left .title{
+    display: none;
+}
+.up .side-left .playlist{
+    display: none;
+}
+.up .side-left .user{
+    justify-items: flex-end;
+}
+.up .side-right .right-up{
+    height: 10vh;
+    background-color: darkblue;
+    justify-content: flex-end;
+    align-items: center;
+}
+.btn{
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 40px;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+}
+.up .side-right .right-down{
+    background-color: orange;
+    gap: 20px;
+    padding-inline: 2%;
+}
+.up .side-right .right-down .nav-bar{
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.up .side-right .right-down .nav-bar div{
+    width:calc((100% - 30px) /4) ;
+    justify-content: center;
+    align-items: center;
+    font-size: 75%;
+    line-height: 100%;
+    margin-block: 5px;
+    color: grey;
+}
+.up .side-right .right-down .card-container{
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.up .side-right .right-down .card-container .card{
+    width: calc( ( 100% - 10px) / 2);
+    gap: 5px;
+}
+.up .side-right .right-down .card-container .card .card-subtitle{
+    font-size: 80%;
+    color: gray;
+}
+.up .side-right .right-down .card-container .card .card-title{
+    font-size: 130%;
+}
+.up .side-right .right-down .title-subtitle .subtitle{
+    font-size: 80%;
+    color: gray;
+}
+.down{
+    background-color: blue;
+    height: 10vh;
+}

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./spotify/css/style.css">
 
-    <link rel="stylesheet" href=".//css/reset.css">
+    <link rel="stylesheet" href="./spotify/css/reset.css">
 
-    <link rel="stylesheet" href=".//css/debug.css">
+    <link rel="stylesheet" href="./spotify/css/debug.css">
 </head>
 <body class="container column">
     <!-- side up -->
@@ -70,21 +70,21 @@
       <!-- down -->
         <div class="container column right-down overflow">
             <div class="container row nav-bar">
-                <div>in evidenza</div>
-                <div>podcast</div>
-                <div>classifiche</div>
-                <div>generi e mood</div>
-                <div>nuove uscite</div>
-                <div>scopri</div>
+                <div class="container">in evidenza</div>
+                <div class="container">podcast</div>
+                <div class="container">classifiche</div>
+                <div class="container">generi e mood</div>
+                <div class="container">nuove uscite</div>
+                <div class="container">scopri</div>
             </div>
             <div class="title">
-                <h4>Recently played</h4>
+                <h3>Recently played</h3>
             </div>
             <div class="container row card-container">
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/metal_lifting.jpg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -96,7 +96,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/stranger.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -108,7 +108,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/sinister.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -120,7 +120,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/split.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -132,7 +132,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/cure.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -144,7 +144,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/aquietplace.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -154,17 +154,17 @@
                     </div>
                 </div>
             </div>
-            <div class="title">
-                <h4>Creato per Jhon Doe</h4>
-            </div>
-            <div class="subtitle">
-                Più ascolti, più accurati saranno i suggerimenti
+            <div class="title-subtitle">
+                <h3 class="title">Creato per Jhon Doe</h3>
+                <div class="subtitle">
+                    Più ascolti, più accurati saranno i suggerimenti
+                </div>
             </div>
             <div class="container row card-container">
                 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/mixdaily.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -176,7 +176,7 @@
 
                 <div class="container column card">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/radar.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -186,17 +186,17 @@
                     </div>
                 </div>
             </div>
-            <div class="title">
-                <h4>Artisti più popolari</h4>
-            </div>
-            <div class="subtitle">
-                Più ascolti, più accurati saranno i suggerimenti
+            <div class="title-subtitle">
+                <h3 class="title">Creato per Jhon Doe</h3>
+                <div class="subtitle">
+                    Più ascolti, più accurati saranno i suggerimenti
+                </div>
             </div>
             <div class="container row card-container">
                 
                 <div class="container column card round">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/einaudi.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -208,7 +208,7 @@
 
                 <div class="container column card round">
                     <div class="img-card-container">
-                        img
+                        <img src="./spotify/img/youg.jpeg" alt="">
                     </div>
                     <div class="card-title">
                         <h5>heavy metal</h5>
@@ -222,7 +222,7 @@
      </div>
     </div>
     <!-- side down -->
-     <div class="container row down">
+    <div class="container row down">
         <div class="container row song-details">
             <div class="song-logo">logo</div>
             <div class="container column song-info">
@@ -243,13 +243,27 @@
                     </div>
                 </div>
             </div>
-            <div class="container column play-tools">
-                <div></div>
-                <div></div>
+        </div>
+        <div class="container column play-tools">
+            <div class="container row side-up">
+                <div class="random-play-logo">logo</div>
+                <div class="pre-song-logo">logo</div>
+                <div class="play-logo-rounded">logo</div>
+                <div class="post-song-logo">logo</div>
+                <div class="repeat-logo">logo</div>
+            </div>
+            <div class="container row side-down">
+                <div class="minute-start">minute-start</div>
+                <div class="bar-25%-full">bar</div>
+                <div class="minute-end">minute-end</div>
             </div>
         </div>
-        <div></div>
-        <div></div>
-     </div>
+        <div class="container row last-info">
+            <div class="hamburger-logo">logo</div>
+            <div class="tv-logo">logo</div>
+            <div class="volume-logo">logo</div>
+            <div class="volum-bar-25%">bar</div>
+        </div>
+    </div>
 </body>
 </html>
