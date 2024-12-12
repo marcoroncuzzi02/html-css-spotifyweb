@@ -18,10 +18,15 @@ img{
     width: 100%;
     display: block;
 }
+/* column left css */
 .up .side-left{
     background-color: black;
     gap: 10px;
     align-items: center;
+    padding-block: 2%;
+}
+.up .side-left .tools{
+    gap: 5px;
 }
 .up .side-left .title{
     display: none;
@@ -29,9 +34,53 @@ img{
 .up .side-left .playlist{
     display: none;
 }
-.up .side-left .user{
-    justify-items: flex-end;
+.up .side-left .spotify{
+    justify-content: center;
 }
+.up .side-left .logo-spotify{
+    display: none;
+}
+.up .side-left .logo-small-spotify{
+    width: 70%;
+}
+.up .side-left .home{
+    justify-content: center;
+}
+.up .side-left .home img{
+    width: 60%;
+}
+.up .side-left .search{
+    justify-content: center;
+}
+.up .side-left .search img{
+    width: 60%;
+}
+.up .side-left .library{
+    justify-content: center;
+}
+.up .side-left .library img{
+    width: 60%;
+}
+.up .side-left .hr{
+    border: 1px solid white;
+}
+.up .side-left .user{
+    gap: 5px;
+}
+.up .side-left .download{
+    justify-content: center;
+}
+.up .side-left .download img{
+    width: 40%;
+    color: grey;
+}
+.up .side-left .profile{
+    justify-content: center;
+}
+.up .side-left .profile img{
+    width: 60%;
+}
+/* main block header css */
 .up .side-right .right-up{
     height: 10vh;
     background-color: darkblue;
@@ -46,6 +95,7 @@ img{
     background-color: black;
     color: white;
 }
+/* main block central css */
 .up .side-right .right-down{
     background-color: orange;
     gap: 20px;
@@ -84,6 +134,11 @@ img{
     font-size: 80%;
     color: gray;
 }
+.up .side-right .right-down .round img{
+    border-radius: 50%;
+}
+/* footer css */
+
 .down{
     background-color: blue;
     height: 10vh;
