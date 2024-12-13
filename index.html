@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./spotify/css/reset.css">
 
     <link rel="stylesheet" href="./spotify/css/debug.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="container column">
     <!-- side up -->
@@ -26,18 +28,21 @@
         <div class="container column tools">
             <div class="container row home">
                 <img src="./spotify/img/home.svg" alt="">
+                <div class="title">Home</div>
             </div>
             <div class="container row search">
                 <img src="./spotify/img/search.svg" alt="">
+                <div class="title">search</div>
             </div>
             <div class="container row library">
                 <img src="./spotify/img/libreria.svg" alt="">
+                <div class="title">your library</div>
             </div>
         </div>
         <div class="container column playlist">
             <h5>PLAYLIST</h5>
             <div class="container row create">
-                <div>logo</div>
+                <i class="fa-solid fa-square-plus"></i>
                 <div>crea playlist</div>
             </div>
             <div>nome playlist</div>
@@ -225,10 +230,12 @@
     <!-- side down -->
     <div class="container row down">
         <div class="container row song-details">
-            <div class="song-logo">logo</div>
+            <div class="song-logo">
+                <img src=".//spotify/img/sinister.jpeg" alt="">
+            </div>
             <div class="container column song-info">
                 <div class="song-name">
-                    <h5>sinister</h5>
+                    <h4>sinister</h4>
                 </div>
                 <div class="song-artist">
                     artista nome
@@ -237,33 +244,49 @@
             <div>
                 <div class="container column add-buttons">
                     <div class="heart-logo">
-                        logo
+                        <i class="fa-regular fa-heart"></i>
                     </div>
                     <div class="carpet-logo">
-                        logo
+                        <i class="fa-regular fa-folder"></i>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container column play-tools">
             <div class="container row side-up">
-                <div class="random-play-logo">logo</div>
-                <div class="pre-song-logo">logo</div>
-                <div class="play-logo-rounded">logo</div>
-                <div class="post-song-logo">logo</div>
-                <div class="repeat-logo">logo</div>
+                <div class="random-play-logo">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div class="pre-song-logo">
+                    <i class="fa-regular fa-square-caret-left"></i>
+                </div>
+                <div class="play-logo-rounded">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="post-song-logo">
+                    <i class="fa-regular fa-square-caret-right"></i>
+                </div>
+                <div class="repeat-logo">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
             </div>
             <div class="container row side-down">
-                <div class="minute-start">minute-start</div>
-                <div class="bar-25%-full">bar</div>
-                <div class="minute-end">minute-end</div>
+                <div class="minute-start">0.25</div>
+                <div class="bar-25%-full">___________</div>
+                <div class="minute-end">4.21</div>
             </div>
         </div>
         <div class="container row last-info">
-            <div class="hamburger-logo">logo</div>
-            <div class="tv-logo">logo</div>
-            <div class="volume-logo">logo</div>
-            <div class="volum-bar-25%">bar</div>
+            <div class="hamburger-logo">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="tv-logo">
+                <i class="fa-solid fa-tv"></i>
+            </div>
+            <div class="volume-logo">
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="volum-bar-25%">_______</div>
         </div>
     </div>
 </body>
