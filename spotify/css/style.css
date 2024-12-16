@@ -32,6 +32,7 @@ img{
     gap: 10px;
     align-items: center;
     padding-block: 2%;
+    justify-content: space-between;
 }
 .up .side-left .tools{
     gap: 5px;
@@ -201,6 +202,14 @@ img{
 }
 /* starting the media queery */
 @media screen and (min-width:480px){
+    /* side left css */
+    .up .side-left{
+        background-color: var(--dark-black);
+        gap: 10px;
+        align-items: flex-start;
+        padding-block: 2%;
+        flex-basis: 30%;
+    }
     .up .side-left .tools{
         align-items: flex-start;
     }
@@ -211,6 +220,26 @@ img{
     .up .side-left .home{
         justify-content: flex-start;
         padding: 10px;
+        align-items: center;
+        gap: 5px;
+    }
+    .up .side-left .search{
+        justify-content: flex-start;
+        padding: 10px;
+        align-items: center;
+        gap: 5px;
+    }
+    .up .side-left .library{
+        justify-content: flex-start;
+        padding: 10px;
+        align-items: center;
+        gap: 5px;
+    }
+    .up .side-left .playlist{
+        justify-content: flex-start;
+        padding: 10px;
+        display: flex;
+        gap: 5px;
     }
     .up .side-left .logo-spotify{
         display: block;
@@ -219,9 +248,6 @@ img{
         display: none;
     }
     .up .side-left .title{
-        display: block;
-    }
-    .up .side-left .playlist{
         display: block;
     }
     .up .side-left .home img{
@@ -247,7 +273,67 @@ img{
     .up .side-left .playlist .create i {
         font-size: 200%;
     }
-
+    .up .side-left .user{
+        gap: 5px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .up .side-left .user .download{
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        margin: 5px;
+    }
+    .up .side-left .user .profile{
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        margin: 5px;
+    }
+    /* side right */
+    .up .side-right {
+        flex-basis: 70%;
+    }
+    .up .side-right .right-down .nav-bar div{
+        width:calc((100% - 30px) /3) ;
+        justify-content: center;
+        align-items: center;
+        font-size: 75%;
+        line-height: 100%;
+        margin-block: 5px;
+        color: var(--light-grey);
+    }
+    /* side down */
+    .down{
+        background-color: var(--grey);
+        height: 10vh;
+        justify-content: center;
+        gap: 10px
+    }
+    .down div{
+        width: calc((100% - 20px) / 3);
+    }
+    .down .song-details{
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        margin: 5px ;
+    }
+    .down .song-details .song-logo{
+        flex-basis: 10%;
+    }
+    .down .song-details .song-info{
+        line-height: 160%;
+        font-size: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        margin-inline: 20px;
+    }
+    
+    .down .song-details .song-info .song-artist{
+        color: var(--light-grey);
+    }
 }
 @media screen and (min-width:768px){
     
