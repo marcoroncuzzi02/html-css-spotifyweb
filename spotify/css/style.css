@@ -336,7 +336,35 @@ img{
     }
 }
 @media screen and (min-width:768px){
-    
+      /* side left css */
+      .up .side-left{
+        background-color: var(--dark-black);
+        gap: 10px;
+        align-items: flex-start;
+        padding-block: 2%;
+        flex-basis: 20%;
+    }
+      /* side right */
+      .up .side-right {
+        flex-basis: 80%;
+    }
+    .up .side-right .right-down .nav-bar div{
+        width:calc((100% - 40px) /5) ;
+        justify-content: center;
+        align-items: center;
+        font-size: 75%;
+        line-height: 100%;
+        margin-block: 5px;
+        color: var(--light-grey);
+    }
+    .up .side-right .right-down .card-container{
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .up .side-right .right-down .card-container .card{
+        width: calc( ( 100% - 30px) / 4);;
+        gap: 5px;
+    }
 }
 @media screen and (min-width:1024px){
     
